@@ -1,0 +1,23 @@
+// Mixins used alongside media queries to adapt for mobile and desktop designs
+
+@mixin desktop{
+
+  @media (min-width: $desktop-size) {
+  
+  @content;
+  
+  }
+  
+  }
+
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  %flexbox {
+    @include flexbox;
+}

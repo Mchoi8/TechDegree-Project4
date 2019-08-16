@@ -1,0 +1,337 @@
+//Website heading [nav bar]
+@import '_base.scss';
+@import '../utilities/variables';
+@import '../utilities/index';
+@import '../utilities/mixins';
+@import '../utilities/placeholders';
+
+@import 'normalize.css';
+
+
+
+// import components partials
+@import '../components/grid';
+@import '../components/index';
+
+
+
+.grid__col--3, .grid__col--12, 
+.grid__col--5, .grid__col--7, 
+    .grid__col--6, .grid__col--4,
+    .grid__col--8  {
+    text-align: center;
+}
+
+
+.img--logo {
+    width: 200px;
+    margin-left: 15px;
+
+}
+
+.grid__col--9 {
+    width: 100%;
+    text-align: center;
+
+}
+
+.nav {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav li {
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0 auto;
+    height: 33px;
+    padding: 10px;
+
+}
+
+
+.nav li:hover {
+    background-color: $main-color;
+    border-radius: 3px;
+    color: white;
+}
+// ********
+
+.headline--primary {
+    font-size: 25px;
+    font-weight: bold;
+    color: $main-color;
+
+}
+
+.headline--secondary {
+    text-align: left;
+    font-weight: normal;
+    color: gray;
+
+}
+
+.link {
+    font-weight: bold;
+    color: $sec-color;
+
+}
+
+.card {
+    display: inline-block;
+
+}
+
+
+
+.blockquote {
+    font-family: $blockquote-font;
+    font-style: italic;
+    text-align: left;
+
+}
+
+.img--frame {
+    padding: 10px;
+
+}
+
+
+.form {
+    max-width: 600px;
+    margin: auto;
+    display: inline-block  ;
+}
+
+.form__label--hidden {
+   // text-align: left;
+    padding: 12px 12px 12px 0;
+    margin-top: 100px;
+    border: 3px solid white;
+
+}
+
+
+
+.img--avatar {
+    margin: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.form__input {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin-top: 5px;
+  outline: 0;
+  padding: 15px;
+  width: 50%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 25px;
+  border-radius: 3px;
+
+}
+
+// Buttons
+
+
+.btn--default.theme__colors {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: $sec-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .btn--success.theme__colors {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: rgb(77, 177, 77);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .btn--error.theme__colors {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: rgb(197, 77, 77);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .btn--warning.theme__colors {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: rgb(221, 168, 70);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .btn--info.theme__colors {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: rgb(194, 65, 194);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  // Bottom grid blocks
+
+  .grid__col--3.theme__colors {
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+    background-color: rgb(224, 134, 224);
+  }
+  .grid__col--4.theme__colors {
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+    background-color: rgb(106, 220, 255);
+  }
+  .grid__col--12.theme__colors {
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+    background-color: rgb(128, 226, 197);
+  }
+  .grid__col--6.theme__colors {
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+    background-color: rgb(70, 124, 206);
+  }
+  .grid__col--5.theme__colors {
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+    background-color: rgb(75, 207, 93);
+  }
+  .grid__col--7.theme__colors {
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+    background-color: rgb(221, 112, 112);
+  }
+  .grid__col--8.theme__colors {
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+    background-color: rgb(228, 157, 99);
+  }
+
+
+@media (min-width: $desktop-size)   { // Desktop Form 1400px
+ 
+    .grid__col--3.theme__colors, .grid__col--4.theme__colors,
+    .grid__col--8.theme__colors, .grid__col--12.theme__colors,
+    .grid__col--7.theme__colors, .grid__col--5.theme__colors, 
+    .grid__col--6.theme__colors, {
+        text-align: center;
+    }
+
+    .grid__col--7.theme__colors.centered {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .grid__col--9 {
+      text-align: right;
+    }
+
+    .nav {
+        width: 70%;
+        display: inline-block;
+    }
+
+    .nav li {
+        margin: 10px;
+        text-align: right;
+        float: left;
+        font-size: 18px;
+    }
+
+    .grid-row {
+        display: inline-block;
+    }
+
+
+    
+    .btn--default.theme__colors, .btn--success.theme__colors,
+    .btn--error.theme__colors, .btn--warning.theme__colors,
+    .btn--info.theme__colors  {
+      display: inline-block;
+      margin-right: 35px;
+      width: 140px;
+      box-sizing: border-box;
+    }
+
+    .btn--default.theme__colors {
+      margin-left: 45px;
+    }
+
+    .blockquote {
+      font-size: 20px;
+    }
+
+    .card {
+      width: 90%;
+    }
+
+    .headline--secondary {
+      font-size: 22px;
+    }
+
+    .form__label--hidden {
+      text-align: left;
+      width: 30%;
+    }
+    
+
+
+    .form__input {
+      display: inline-block;
+      width: 250px;
+
+    }
+    
+
+}

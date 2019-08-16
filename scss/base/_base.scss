@@ -1,0 +1,17 @@
+@import '../utilities/variables';
+
+* {
+    font-family: $font-fam;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 18px;
+    text-align: left;
+}
